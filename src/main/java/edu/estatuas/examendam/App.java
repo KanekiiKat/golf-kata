@@ -47,7 +47,65 @@ public class App {
          * Crea el torneo reutilizando la clase Course proporcionada.
          */
         Course augusta  = new Course(); 
-      
+        
+        /*
+         * Crea el jugador/a A.
+         * Reutiliza la clase Course para añadir el registro de recorrido
+         * del jugador A con sus golpes en cada hoyo.
+         */
+        Byte[] coursePlayerA = {4, 5, 3, 4, 4, 4, 4, 3, 5, 5, 4, 4, 3, 4, 4, 3, 4, 4}; // 71
+        Player playerA = new Player("MJ", (byte) 0);
+        augusta.addPlayerCourse(playerA, coursePlayerA);
+
+        /*
+         * Crea el jugador/a B.
+         * Reutiliza la clase Course para añadir el registro de recorrido
+         * del jugador B con sus golpes en cada hoyo.
+         */
+        Byte[] coursePlayerB = {4, 5, 3, 4, 4, 4, 5, 3, 5, 5, 4, 4, 3, 5, 4, 3, 4, 4}; // 73
+        Player playerB = new Player("JS", (byte) 0);
+        augusta.addPlayerCourse(playerB, coursePlayerB);
+
+        /*
+         * Crea la clase ScoreCard
+         * y añade a la tarjeta los jugadores A y B
+         * Establece en la tarjeta el Course "Augusta".
+         */
+        /*
+         * Calcula el total strokes de los jugadores
+         * en la modalidad stroke play.
+         * Crea la modalidad de juego StrokePlay.
+         * En esta modalidad el total de strokes 
+         * de un jugador es la suma total de golpes
+         * de su recorrido.
+         * Implementa el patron strategy.
+         * Crea la clase ComputeCard que reciba la tarjeta
+         * y la modalidad o estrategia de juego y calcule
+         * el total de strokes de cada jugador.
+         * Toda la lógica se encuentra en la clase StrokePlay.
+         */
+
+         /* 
+        GolfPlay strokePlay = new StrokePlay();
+        ComputeCard computeStrokePlay = new ComputeCard(scoreCard, strokePlay); */
+        
+        /*
+         * Guarda en la tarjeta el total de strokes
+         * de cada jugador.
+         */
+
+        /* 
+        computeStrokePlay.compute();
+        
+        
+        
+        
+        /*
+         * Muestra por CLI iniciales, strokes y stableford points (0)
+         * de cada jugador.
+         */
+
+
     }
 }
         

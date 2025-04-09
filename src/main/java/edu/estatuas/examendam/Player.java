@@ -2,28 +2,28 @@ package edu.estatuas.examendam;
 
 public class Player {
     
-    private String player;
-    private int handicap;
-    private int score;
-    private int stablefordPoints;
+    private String initials;
+    private Byte handicap;
+    private Short score;
+    private Short points;
 
-    public Player(String player, int handicap) {
+    public Player(String initials, Byte handicap) {
 
-        this.player = player;
+        this.initials = initials;
         this.handicap = handicap;
         this.score = 0;
-        this.stablefordPoints = 0;
+        this.points= 0;
     }
 
-    public String getPlayer() {
-        return player;
+    public String getinitials() {
+        return initials;
     }
 
-    public void setPlayer(String player) {
-        this.player = player;
+    public void setinitials(String initials) {
+        this.initials = initials;
     }
 
-    public int getHandicap() {
+    public Byte getHandicap() {
         return handicap;
     }
 
@@ -32,15 +32,15 @@ public class Player {
         return score;
     }
 
-    public void setScore(int score) {
+    public void setScore(Short score) {
         this.score = score;
     }
 
-    public int getStablefordPoints() {
-        return stablefordPoints;
+    public int getPoints() {
+        return points;
     }
 
-    public void setStablefordPoints(int stablefordPoints) {
-        this.stablefordPoints = stablefordPoints;
+    public void setPoints(Short stablefordPoints) {
+        this.points = stablefordPoints;
     }
 }

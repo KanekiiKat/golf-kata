@@ -85,16 +85,16 @@ public class App {
          * Toda la lógica se encuentra en la clase StrokePlay.
          */
 
-         /* 
+
         GolfPlay strokePlay = new StrokePlay();
-        ComputeCard computeStrokePlay = new ComputeCard(scoreCard, strokePlay); */
+        ComputeCard computeStrokePlay = new ComputeCard(scoreCard, strokePlay);
         
         /*
          * Guarda en la tarjeta el total de strokes
          * de cada jugador.
          */
 
-        /* 
+
         computeStrokePlay.compute();
         
         

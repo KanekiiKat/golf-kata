@@ -31,7 +31,7 @@ public class Course {
     public void addPlayerCourse(Player player, Byte[] playerCourse) {
         Byte holeNumber = 0;
         for (Byte holeStrokes : playerCourse) {
-            this.playersCourse.put(player.getPlayer(), holeNumber++, holeStrokes);
+            this.playersCourse.put(player.getinitials(), holeNumber++, holeStrokes);
         } 
     }
 
@@ -42,7 +42,7 @@ public class Course {
      * @return Un array de bytes que representa los golpes en cada hoyo
      */
     public byte[] getPlayerCourse(Player player) {
-        return Bytes.toArray(this.playersCourse.row(player.getPlayer()).values());
+        return Bytes.toArray(this.playersCourse.row(player.getinitials()).values());
     }
     
 }
